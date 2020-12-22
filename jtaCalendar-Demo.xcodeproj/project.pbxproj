@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,8 @@
 		183CD06725918B7C00B8302F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183CD06525918B7C00B8302F /* LaunchScreen.storyboard */; };
 		183CD07225918B7C00B8302F /* jtaCalendar_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183CD07125918B7C00B8302F /* jtaCalendar_DemoTests.swift */; };
 		183CD07D25918B7C00B8302F /* jtaCalendar_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183CD07C25918B7C00B8302F /* jtaCalendar_DemoUITests.swift */; };
+		183CD08F25918D5300B8302F /* JTAppleCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 183CD08E25918D5300B8302F /* JTAppleCalendar */; };
+		183CD0952591931B00B8302F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 183CD0942591931B00B8302F /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				183CD08F25918D5300B8302F /* JTAppleCalendar in Frameworks */,
+				183CD0952591931B00B8302F /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +148,10 @@
 			dependencies = (
 			);
 			name = "jtaCalendar-Demo";
+			packageProductDependencies = (
+				183CD08E25918D5300B8302F /* JTAppleCalendar */,
+				183CD0942591931B00B8302F /* SnapKit */,
+			);
 			productName = "jtaCalendar-Demo";
 			productReference = 183CD05725918B7A00B8302F /* jtaCalendar-Demo.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,10 @@
 				Base,
 			);
 			mainGroup = 183CD04E25918B7A00B8302F;
+			packageReferences = (
+				183CD08D25918D5300B8302F /* XCRemoteSwiftPackageReference "JTAppleCalendar" */,
+				183CD0932591931B00B8302F /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 183CD05825918B7A00B8302F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -587,6 +599,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		183CD08D25918D5300B8302F /* XCRemoteSwiftPackageReference "JTAppleCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/patchthecode/JTAppleCalendar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.3;
+			};
+		};
+		183CD0932591931B00B8302F /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		183CD08E25918D5300B8302F /* JTAppleCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 183CD08D25918D5300B8302F /* XCRemoteSwiftPackageReference "JTAppleCalendar" */;
+			productName = JTAppleCalendar;
+		};
+		183CD0942591931B00B8302F /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 183CD0932591931B00B8302F /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 183CD04F25918B7A00B8302F /* Project object */;
 }
